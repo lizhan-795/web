@@ -10,6 +10,106 @@
     <script type="text/javascript" src="bootstrapvalidator-0.4.5/vendor/bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="bootstrapvalidator-0.4.5/dist/js/bootstrapValidator.min.js"></script>
     <script src="js/form.js"></script>
+    <script>
+    $(function() {
+    $(".login").click(function(e) {
+        e.preventDefault();
+        if (validate()) {
+            if ($("input[type='radio']:checked").length < 1) {
+                //alert("请选择性别！");
+                $("input[type='radio']").next().text("");
+            }else{
+              validate_num1();
+            }
+        }
+    })
+  });
+  function validate() {
+    let flag = true;
+    $(":text,:password").each((index, element) => {
+      if ($(element).val() == "") {
+        let title = $(element).attr("placeholder");
+        flag = false;
+        //alert(title);
+        $(element).next().next().text(title);
+        $(element).focus();
+        //return false;
+      }else{
+        $(element).next().next().text('');
+      }
+    })
+    return flag;
+  }
+
+  function validate_num1() {
+      let flag = true;
+    $(":text,:password").each((index, element) => {
+      let element_text = $(element).attr("placeholder");
+      if (element_text == "请输入邮箱") {
+        let tmp = /^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
+        if (!tmp.test($(element).val())) {
+          // alert("邮箱格式不正确！");
+          $('#email').text("邮箱格式不正确！");
+          flag= false;
+          $(element).focus();
+          //return false;
+        }
+      }
+      if (element_text == "请输入要注册的账号") {
+        let tmp = /^[a-zA-Z][0-9a-zA-Z_]{4,9}$/;
+        if (!tmp.test($(element).val())) {
+          // alert("用户名是字母开头，只能包括数字和下划线！");
+          $('#username').text("用户名是字母开头，只能包括数字和下划线！");
+          flag= false;
+          $(element).focus();
+          //return false;
+        }
+      }
+      
+      if (element_text == "请输入登录密码") {
+        let tmp = /^.{6,12}$/;
+        if (!tmp.test($(element).val())) {
+          // alert("密码必须为6到12位！");
+          $('#pwd_validation').text("密码必须为6到12位！");
+          flag= false;
+          $(element).focus();
+          //return false;
+        }
+      }
+      if (element_text == "请输入您的电话") {
+        let tmp = /^(13[0-9]|14[5|7]|15[0|1|2|3|5|6|7|8|9]|18[0|1|2|3|5|6|7|8|9])\d{8}$/;
+        if (!tmp.test($(element).val())) {
+          //alert("电话号码不正确！");
+          $('#phone').text("电话号码不正确！");
+          flag= false;
+          $(element).focus();
+          //return false;
+        }
+      }
+      if (element_text == "请输入您的年龄") {
+        let tmp = /^[1-9][0-9]*[0-9]*$/;
+        if (!tmp.test($(element).val())) {
+          //alert("年龄输入不正确！");
+          $('#age_validation').text("年龄输入不正确！");
+          flag= false;
+          $(element).focus();
+          //return false;
+        }
+      }
+      if (element_text == "请输入身份证号码") {
+        let tmp = /^[1-9]\d{5}(18|19|([23]\d))\d{2}((0[1-9])|(10|11|12))(([0-2][1-9])|10|20|30|31)\d{3}[0-9Xx]$/;
+        if (!tmp.test($(element).val())) {
+          //alert("身份证输入不正确！");
+          $('#idcard').text("身份证输入不正确！");
+          flag= false;
+          $(element).focus();
+          //return false;
+        }
+      }
+    })
+    return flag;
+  }
+    </script>
   </head>
   <body>
     <div class="header">
