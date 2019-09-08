@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/login.css">
+    <script src="js/jQuery 3.4.1.js"></script>
+    <script type="text/javascript" src="bootstrapvalidator-0.4.5/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="bootstrapvalidator-0.4.5/dist/js/bootstrapValidator.min.js"></script>
+    <script>
+       $(function() {
+        let str = validate_num2();
+        $(".login").click(function(e) {
+            e.preventDefault();
+            if (validate()) {
+                if ($("input[type='radio']:checked").length < 1) {
+                    //alert("请选择性别！");
+                    $("input[type='radio']").next().text("");
+                }else if(validate_num1()){
+                        let result = eval(str);
+                    if ($("#result").val() != result) {
+                        $('#result').text("验证码错误！");
+                    }
+                }
+            }
+        })
+      });
+
+      function validate() {
+        let flag = true;
+        $(":text,:password").each((index, element) => {
+          if ($(element).val() == "") {
+            let title = $(element).attr("placeholder");
+            flag = false;
+            //alert(title);
+            $(element).next().next().text(title);
+            $(element).focus();
+            //return false;
+          }else{
+            $(element).next().next().text('');
+          }
+        })
+        return flag;
+      }
+
+      function validate_num1() {
+          let flag = true;
+        $(":text,:password").each((index, element) => {
+          let element_text = $(element).attr("placeholder");
+          if (element_text == "请输入邮箱") {
+            let tmp = /^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
+            if (!tmp.test($(element).val())) {
+              // alert("邮箱格式不正确！");
+              $('#email').text("邮箱格式不正确！");
+              flag= false;
+              $(element).focus();
+              //return false;
+            }
+          }
+          if (element_text == "请输入要注册的账号") {
+            let tmp = /^[a-zA-Z][0-9a-zA-Z_]{4,9}$/;
+            if (!tmp.test($(element).val())) {
+              // alert("用户名是字母开头，只能包括数字和下划线！");
+              $('#username').text("用户名是字母开头，只能包括数字和下划线！");
+              flag= false;
+              $(element).focus();
+              //return false;
+            }
+          }
+          
+          if (element_text == "请输入登录密码") {
+            let tmp = /^.{6,12}$/;
+            if (!tmp.test($(element).val())) {
+              // alert("密码必须为6到12位！");
+              $('#pwd_validation').text("密码必须为6到12位！");
+              flag= false;
+              $(element).focus();
+              //return false;
+            }
+          }
+          if (element_text == "请输入您的电话") {
+            let tmp = /^(13[0-9]|14[5|7]|15[0|1|2|3|5|6|7|8|9]|18[0|1|2|3|5|6|7|8|9])\d{8}$/;
+            if (!tmp.test($(element).val())) {
+              //alert("电话号码不正确！");
+              $('#phone').text("电话号码不正确！");
+              flag= false;
+              $(element).focus();
+              //return false;
+            }
+          }
+          if (element_text == "请输入您的年龄") {
+            let tmp = /^[1-9][0-9]*[0-9]*$/;
+            if (!tmp.test($(element).val())) {
+              //alert("年龄输入不正确！");
+              $('#age_validation').text("年龄输入不正确！");
+              flag= false;
+              $(element).focus();
+              //return false;
+            }
+          }
+          if (element_text == "请输入身份证号码") {
+            let tmp = /^（[1-9]\d{5}(18|19|([23]\d))\d{2}((0[1-9])|(10|11|12))(([0-2][1-9])|10|20|30|31)\d{3}[0-9Xx]）|（[1-9]\d{5}\d{2}((0[1-9])|(10|11|12))(([0-2][1-9])|10|20|30|31)\d{2}）$/;
+            if (!tmp.test($(element).val())) {
+              //alert("身份证输入不正确！");
+              $('#idcard').text("身份证输入不正确！");
+              flag= false;
+              $(element).focus();
+              //return false;
+            }
+          }
+        })
+        return flag;
+      }
+      function validate_num2() {
+          let arr = ["+", "-", "*"];
+          let num1 = Math.floor(Math.random() * 100 + 1);
+          let num2 = Math.floor(Math.random() * 100 + 1);
+          let operator = arr[Math.floor(Math.random() * 3)];
+          let str = num1 + operator + num2;
+          $(".validation").text(str);
+          return str;
+        }
+    </script>
+    <style>
+     
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>欢迎注册</h1>
+      <form class="content">
+        <div class="c1">
+          <label class="c1">账号&nbsp</label>
+          <input
+            type="text"
+            class="username"
+            name="username"
+            placeholder="请输入要注册的账号"
+          /><br />
+          <label class= "warning" id="username"></label>
+        </div>
+        <div class="c1">
+          <label class="c1">姓名&nbsp</label>
+            <input type="text" id="name" placeholder="请输入您的姓名" /><br />
+          <label class= "warning" id="name_validation"></label>
+        </div>
+        <div class="c1">
+          <label class="c1">登录密码&nbsp</label>
+          <input type="password" id="pwd" placeholder="请输入登录密码" /><br />
+          <label class= "warning" id="pwd_validation"></label>
+        </div>
+        <div class="c1">
+          <label class="c1">电话号码&nbsp</label>
+          <input
+            type="text"
+            class="idcard"
+            placeholder="请输入您的电话"
+          /><br/>
+          <label class= "warning" id="phone"></label>
+        </div>
+        <div class="c1">
+          <label class="c1">年龄&nbsp</label>
+          <input type="text" id="age" placeholder="请输入您的年龄" /><br />
+          <label class= "warning" id="age_validation"></label>
+        </div>
+        <div class="c1_sex">
+          <label class="c1">性别&nbsp</label>
+          <label><input type="radio" name="sex" class="sex" />男</label>
+          <label><input type="radio" name="sex" class="sex" />女</label>
+          <label class= "warning" id="sex_validation"></label>
+          <br/>
+        </div>
+        <div class="c1">
+          <label class="c1">地址&nbsp</label>
+          <input
+            type="text"
+            class="adress"
+            placeholder="请输入您的地址"
+          /><br />
+          <label class= "warning" id="adress"></label>
+        </div>
+        <div class="c1">
+          <label class="c1">邮箱&nbsp</label>
+          <input type="text" class="email" placeholder="请输入邮箱" /><br />
+          <label class= "warning" id="email"></label>
+        </div>
+        <div class="c1">
+          <label class="c1">身份证号码&nbsp</label >
+          <input
+            type="text"
+            class="idcard"
+            placeholder="请输入身份证号码"
+          /><br />
+          <label class= "warning" id="idcard"></label>
+        </div>
+        <div id="validation">
+          <label class="c1">验证码&nbsp</label>
+          <input type="text" class="anwser" placeholder="请输入验证码" />
+          <span class="validation"></span><br></br>
+          <label class= "warning" id="result"></label>
+        </div>
+      </form>
+    </div>
+    <div class="submit">
+      <input type="submit" value="Login" class="login" >
+    </div>
+  </body>
+</html>
