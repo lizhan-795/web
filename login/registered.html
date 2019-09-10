@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="layer/theme/default/layer.css" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/login.css" />
+    <script src="js/jQuery 3.4.1.js"></script>
+    <script
+      type="text/javascript"
+      src="bootstrapvalidator-0.4.5/vendor/bootstrap/js/bootstrap.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="bootstrapvalidator-0.4.5/dist/js/bootstrapValidator.min.js"
+    ></script>
+    <script src="layer/layer.js"></script>
+    <script>
+      $(function() {
+        $("#default").submit(function(e){
+          e.preventDefault();
+          if (validate()) {
+              if ($("input[type='radio']:checked").length < 1) {
+                //alert("请选择性别！");
+                $("input[type='radio']")
+                  .next()
+                  .text("");
+              } else if(validate_num1()){
+              let data = $('#default').serialize();
+              console.log(data);
+              //使用ajax跳转
+              $.ajax({
+                //服务器地址
+                url: "http://192.168.20.126:8080/register",
+                //请求方式  GET
+                type: "POST",
+                //请求格式
+                dataType: "json",
+                // contentType:"application/x-www-form-urlencoded",
+                data: $('#default').serialize(), //将表单序列化为name=值的字符串。account=admin&password=123456
+                // headers:{"Access-Control-Allow-Headers":"X-Requested-With","Access-Control-Allow-Origin":"file://"},
+                beforeSend: function() {
+                  layerIndex = layer.load(1); //打开一个加载的图标
+                },
+                success: function(data) {
+                  console.log(data);
+                  layer.close(layerIndex); //关闭加载图标
+                  if (data.isSuccess) {
+                    //登录成功
+                    //跳转到首页
+                    //window.location.href = '${APP_PATH}/jsp/user/users.jsp';
+                    layer.msg("注册成功", { icon: 1, time: 2000, anim: 5 });
+                    window.location.href = 'index.html';
+                  } else {
+                    layer.msg("用户名或密码错误", {
+                      icon: 2,
+                      time: 2000,
+                      anim: 5
+                    });
+                    return;
+                  }
+                },
+                error:function(){
+                  layer.close(layerIndex); //关闭加载图标
+                  layer.msg("服务器发生未知错误", { icon: 2, time: 2000, anim: 5 });
+                }
+              });
+              }
+            }
+        });
+      });
+
+      function validate() {
+        let flag = true;
+        $(":text,:password").each((index, element) => {
+          if ($(element).val() == "") {
+            let title = $(element).attr("placeholder");
+            flag = false;
+            //alert(title);
+            $(element)
+              .next()
+              .next()
+              .text(title);
+            $(element).focus();
+            //return false;
+          } else {
+            $(element)
+              .next()
+              .next()
+              .text("");
+          }
+        });
+        return flag;
+      }
+
+      function validate_num1() {
+        let flag = true;
+        $(":text,:password").each((index, element) => {
+          let element_text = $(element).attr("placeholder");
+          if (element_text == "请输入邮箱") {
+            let tmp = /^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
+            if (!tmp.test($(element).val())) {
+              // alert("邮箱格式不正确！");
+              $("#email").text("邮箱格式不正确！");
+              flag = false;
+              $(element).focus();
+              //return false;
+            }
+          }
+          if (element_text == "请输入要注册的账号") {
+            let tmp = /^[a-zA-Z][0-9a-zA-Z_]{4,9}$/;
+            if (!tmp.test($(element).val())) {
+              // alert("用户名是字母开头，只能包括数字和下划线！");
+              $("#username").text("用户名是字母开头，只能包括数字和下划线！");
+              flag = false;
+              $(element).focus();
+              //return false;
+            }
+          }
+
+          if (element_text == "请输入登录密码") {
+            let tmp = /^.{6,12}$/;
+            if (!tmp.test($(element).val())) {
+              // alert("密码必须为6到12位！");
+              $("#pwd_validation").text("密码必须为6到12位！");
+              flag = false;
+              $(element).focus();
+              //return false;
+            }
+          }
+          if (element_text == "请输入您的电话") {
+            let tmp = /^(13[0-9]|14[5|7]|15[0|1|2|3|5|6|7|8|9]|18[0|1|2|3|5|6|7|8|9])\d{8}$/;
+            if (!tmp.test($(element).val())) {
+              //alert("电话号码不正确！");
+              $("#phone").text("电话号码不正确！");
+              flag = false;
+              $(element).focus();
+              //return false;
+            }
+          }
+          if (element_text == "请输入您的年龄") {
+            let tmp = /^[1-9][0-9]*[0-9]*$/;
+            if (!tmp.test($(element).val())) {
+              //alert("年龄输入不正确！");
+              $("#age_validation").text("年龄输入不正确！");
+              flag = false;
+              $(element).focus();
+              //return false;
+            }
+          }
+          if (element_text == "请输入身份证号码") {
+            let tmp = /^[1-9]\d{5}(18|19|([23]\d))\d{2}((0[1-9])|(10|11|12))(([0-2][1-9])|10|20|30|31)\d{3}[0-9Xx]$/;
+            if (!tmp.test($(element).val())) {
+              //alert("身份证输入不正确！");
+              $("#idcard").text("身份证输入不正确！");
+              flag = false;
+              $(element).focus();
+              //return false;
+            }
+          }
+        });
+        return flag;
+      }
+    </script>
+  </head>
+  <body>
+    <div class="header">
+      <h1>欢迎注册</h1>
+      <form id="default">
+        <div class="c1">
+          <label class="c1">账号&nbsp</label>
+          <input
+            type="text"
+            class="account"
+            name="account"
+            placeholder="请输入要注册的账号"
+          /><br />
+          <label class="warning" id="username"></label>
+        </div>
+        <div class="c1">
+          <label class="c1">姓名&nbsp</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="请输入您的姓名"
+          /><br />
+          <label class="warning" id="name_validation"></label>
+        </div>
+        <div class="c1">
+          <label class="c1">登录密码&nbsp</label>
+          <input type="password" id="pwd" placeholder="请输入登录密码" name="password" /><br />
+          <label class="warning" id="pwd_validation"></label>
+        </div>
+        <div class="c1">
+          <label class="c1">电话号码&nbsp</label>
+          <input
+            type="text"
+            class="phone"
+            name="phone"
+            placeholder="请输入您的电话"
+          /><br />
+          <label class="warning" id="phone"></label>
+        </div>
+        <div class="c1">
+          <label class="c1">年龄&nbsp</label>
+          <input type="text" id="age" placeholder="请输入您的年龄" name="age" /><br />
+          <label class="warning" id="age_validation"></label>
+        </div>
+        <div class="c1_sex">
+          <label class="c1">性别&nbsp</label>
+          <label
+            ><input type="radio" name="sex" class="sex" value="man" />男</label
+          >
+          <label
+            ><input
+              type="radio"
+              name="sex"
+              class="sex"
+              value="woman"
+            />女</label
+          >
+          <label class="warning" id="sex_validation"></label>
+          <br />
+        </div>
+        <div class="c1">
+          <label class="c1">地址&nbsp</label>
+          <input
+            type="text"
+            class="adress"
+            placeholder="请输入您的地址"
+            name="adress"
+          /><br />
+          <label class="warning" id="adress"></label>
+        </div>
+        <div class="c1">
+          <label class="c1">邮箱&nbsp</label>
+          <input type="text" class="email" placeholder="请输入邮箱" name="email" /><br />
+          <label class="warning" id="email"></label>
+        </div>
+        <div class="c1">
+          <label class="c1">身份证号码&nbsp</label>
+          <input
+            type="text"
+            class="idcard"
+            placeholder="请输入身份证号码"
+            name="idCard"
+          /><br />
+          <label class="warning" id="idcard"></label>
+        </div>
+        <div class="submit">
+          <input type="submit" value="registered" class="registered" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
