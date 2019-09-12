@@ -1,7 +1,114 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cfde61e1-c011-4fe5-8287-21274ff9ba19" name="Default" comment="" />
+    <list default="true" id="cfde61e1-c011-4fe5-8287-21274ff9ba19" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/Gruntfile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/bootstrapValidator.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/date/css/bootstrap-datetimepicker-standalone.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/date/css/bootstrap-datetimepicker.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/date/css/bootstrap-datetimepicker.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/date/js/bootstrap-datetimepicker.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/demo/attribute.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/demo/choice.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/demo/container.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/demo/date.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/demo/enable.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/demo/formWithoutLabels.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/demo/html5.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/demo/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/demo/invisible.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/demo/labelWithoutClass.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/demo/live.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/demo/multiple.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/demo/remote.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/demo/remote.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/demo/selector.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/demo/selector2.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/demo/submitHandler.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/demo/tab.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/demo/target.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/demo/validators.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/dist/css/bootstrapValidator.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/dist/css/bootstrapValidator.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/dist/js/bootstrapValidator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/dist/js/bootstrapValidator.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/screenshots/screenshot.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/src/css/bootstrapValidator.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/src/js/bootstrapValidator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/src/js/validator/base64.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/src/js/validator/between.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/src/js/validator/callback.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/src/js/validator/choice.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/src/js/validator/creditCard.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/src/js/validator/cusip.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/src/js/validator/cvv.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/src/js/validator/date.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/src/js/validator/different.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/src/js/validator/digits.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/src/js/validator/ean.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/src/js/validator/emailAddress.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/src/js/validator/file.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/src/js/validator/greaterThan.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/src/js/validator/grid.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/src/js/validator/hex.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/src/js/validator/hexColor.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/src/js/validator/iban.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/src/js/validator/id.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/src/js/validator/identical.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/src/js/validator/imei.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/src/js/validator/integer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/src/js/validator/ip.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/src/js/validator/isbn.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/src/js/validator/isin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/src/js/validator/ismn.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/src/js/validator/issn.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/src/js/validator/lessThan.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/src/js/validator/mac.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/src/js/validator/notEmpty.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/src/js/validator/numeric.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/src/js/validator/phone.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/src/js/validator/regexp.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/src/js/validator/remote.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/src/js/validator/rtn.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/src/js/validator/sedol.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/src/js/validator/siren.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/src/js/validator/siret.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/src/js/validator/step.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/src/js/validator/stringCase.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/src/js/validator/stringLength.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/src/js/validator/uri.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/src/js/validator/uuid.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/src/js/validator/vat.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/src/js/validator/vin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/src/js/validator/zipCode.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/vendor/bootstrap/css/bootstrap-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/vendor/bootstrap/css/bootstrap-theme.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/vendor/bootstrap/css/bootstrap-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/vendor/bootstrap/css/bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/vendor/bootstrap/css/bootstrap.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/vendor/bootstrap/css/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/vendor/bootstrap/fonts/glyphicons-halflings-regular.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/vendor/bootstrap/fonts/glyphicons-halflings-regular.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/vendor/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/vendor/bootstrap/js/bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/vendor/bootstrap/js/bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/vendor/jquery/jquery-1.10.2.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/bootstrapvalidator-0.4.5/vendor/jquery/jquery-1.10.2.min.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/css/login.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/css/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/images/background.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/js/form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/js/jQuery 3.4.1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../login/表单.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -12,43 +119,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="repo.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="repo.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test3/repo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
+            <state relative-caret-position="575">
               <caret line="25" column="20" lean-forward="false" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Customer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test3/Customer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="17" column="28" lean-forward="false" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Productor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test3/Productor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="17" column="27" lean-forward="false" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cilent.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test3/cilent.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="14" column="29" lean-forward="true" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -128,9 +203,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -138,20 +210,18 @@
               <item name="test" type="b2602c69:ProjectViewProjectNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="nodejs_interpreter_path" value="D:/Node/node" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -336,41 +406,43 @@
       <workItem from="1566627511711" duration="5386000" />
       <workItem from="1566633269651" duration="1015000" />
       <workItem from="1566810569184" duration="7000" />
+      <workItem from="1568012947412" duration="650000" />
+      <workItem from="1568017990560" duration="144000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6408000" />
+    <option name="totallyTimeSpent" value="7202000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924107" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.453125" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25266525" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25746268" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.453125" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -387,6 +459,78 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/test3/repo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="25" column="20" lean-forward="false" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test3/Customer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="17" column="28" lean-forward="false" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test3/Productor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="17" column="27" lean-forward="false" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test3/cilent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="14" column="29" lean-forward="false" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test3/repo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="25" column="20" lean-forward="false" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test3/Customer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="17" column="28" lean-forward="false" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test3/Productor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="17" column="27" lean-forward="false" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test3/cilent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="14" column="29" lean-forward="true" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test3/repo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="529">
@@ -523,18 +667,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test3/Customer.java">
+    <entry file="file://$PROJECT_DIR$/src/test3/cilent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="17" column="28" lean-forward="false" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test3/repo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="25" column="20" lean-forward="false" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+        <state relative-caret-position="437">
+          <caret line="19" column="51" lean-forward="false" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -549,10 +685,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test3/cilent.java">
+    <entry file="file://$PROJECT_DIR$/src/test3/Customer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="29" lean-forward="true" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+        <state relative-caret-position="345">
+          <caret line="17" column="28" lean-forward="false" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test3/repo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="25" column="20" lean-forward="false" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
